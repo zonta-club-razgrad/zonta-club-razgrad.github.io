@@ -120,6 +120,8 @@
 /* Стилове на тематични групи. */
 .qa-index{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 28px}.qa-index button{border:1px solid #e2c5ca;border-radius:100px;padding:9px 15px;color:#74344e;text-decoration:none;background:#fff;font-size:14px;font-weight:700}.qa-index button:hover{border-color:#a14c6e;background:#fff1f2}.qa-group{scroll-margin-top:120px;margin:0 0 42px}.qa-group h2{font-size:clamp(22px,2.4vw,30px);color:#70253e;margin:0 0 17px;font-weight:800}.qa-group .resource-item{padding:21px 24px}.qa-group .resource-item[open]{background:#fffaf8}.qa-group .resource-item summary{font-size:clamp(17px,1.8vw,20px)}.qa-group .resource-item p{font-size:16px;line-height:1.75}@media(max-width:650px){.qa-index{gap:8px;margin-top:4px;margin-bottom:26px}.qa-index button{font-size:13px;padding:8px 12px}.qa-group{margin-bottom:35px}.qa-group .resource-item p{font-size:16px}}
 
+
+.local-help-heading{margin:34px 0 8px;font-size:clamp(25px,4vw,34px);color:var(--ink);line-height:1.25}.local-help-intro{margin:0 0 20px;color:#704756;line-height:1.65;max-width:780px}.local-help-grid .help-card{min-width:0;overflow-wrap:anywhere}.local-help-grid .number{font-size:clamp(24px,4vw,32px);display:block;width:fit-content;line-height:1.2;margin:13px 0}.local-help-grid .local-address{font-size:14px;color:#775460}.local-help-grid .secondary-phone{font-size:15px;font-weight:700;color:var(--wine);display:inline-block;margin:6px 0}.safety-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}.safety-item{background:#fff;border:1px solid #ead7d9;border-radius:16px;padding:21px 24px}.safety-item h3{font-size:20px;line-height:1.25;color:var(--ink);margin:0 0 10px}.safety-item p{font-size:16px;color:#6b4b58;line-height:1.7;margin:0}.safety-reference{font-size:14px;line-height:1.7;color:#806773;margin:18px 0 0}.safety-reference a{color:var(--wine);font-weight:700}.local-home-link{max-width:var(--max);padding:0 clamp(19px,4vw,55px);margin:0 auto 36px}.local-home-link a{display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff1ec;border:1px solid #ead7d9;padding:21px 24px;border-radius:16px;text-decoration:none;color:var(--wine)}.local-home-link strong{font-size:20px;display:block;margin-bottom:5px}.local-home-link small{display:block;font-size:15px;color:#704756;line-height:1.5}.local-home-link a:focus-visible,.local-help-grid a:focus-visible{outline:3px solid #891738;outline-offset:4px}.local-help-grid .site-link{overflow-wrap:anywhere}.safety-emphasis{font-weight:700;color:var(--wine)}@media(max-width:650px){.safety-grid{grid-template-columns:1fr}.local-home-link a{padding:18px}.safety-item{padding:19px}.local-help-grid .help-card{padding:21px}.local-help-heading{margin-top:29px}}
 </style>
 
 
@@ -975,7 +977,81 @@ window.MEZHDU_CONTENT = {
   "review_summary": {
     "scope": "27 образователни статии и контакти за подкрепа; без казуси, Q&A, карти със съвети и списъци за самооценка.",
     "limits": "Редакционен, а не клиничен или пълен правен преглед. Очаква се независимо психологическо становище."
-  }
+  },
+  "local_help_contacts": [
+    {
+      "name": "Консултативен център по проблемите на домашното насилие – Разград",
+      "phones": [
+        "0898 552 688"
+      ],
+      "address": "ж.к. „Освобождение“, бл. 34, ет. 1",
+      "purpose": "Психологическа, социална и правна подкрепа за пострадали от домашно насилие, включително съдействие за защита.",
+      "url": "https://www.ngo-rz.org/ccj/",
+      "link": "Сайт на центъра"
+    },
+    {
+      "name": "Център за обществена подкрепа (ЦОП) – Разград",
+      "phones": [
+        "084 660 283"
+      ],
+      "address": "бул. „България“ № 4",
+      "purpose": "Социални услуги, консултиране и подкрепа за деца и семейства в затруднена ситуация.",
+      "url": "https://www.razgrad.bg/socialni-dejnosti/sotsialni-uslugi/cent-r-za-obsestvena-podkrepa-cop-gr-razgrad",
+      "link": "Община Разград",
+      "alternate_phone": "0879 612 223",
+      "alternate_url": "https://nrm.bg/bgregions/razgrad/"
+    },
+    {
+      "name": "Дирекция „Социално подпомагане“ – Разград",
+      "phones": [
+        "084 660 717"
+      ],
+      "address": "бул. „Княз Борис“ № 72",
+      "purpose": "Социална подкрепа, насочване към услуги и сигнали за деца, нуждаещи се от закрила (чрез отдел „Закрила на детето“).",
+      "url": "https://asp.government.bg/bg/kontakti/teritorialni-strukturi/",
+      "link": "Официален указател на АСП"
+    },
+    {
+      "name": "ОДМВР – Разград",
+      "phones": [
+        "084 627 257"
+      ],
+      "address": "",
+      "purpose": "Дежурна част на полицията. При непосредствена опасност използвай 112.",
+      "url": "https://www.mvr.bg/razgrad/дирекцията/за-одмвр/указател",
+      "link": "Указател на МВР"
+    }
+  ],
+  "safety_guidance": [
+    {
+      "title": "Безопасност на първо място",
+      "body": "При непосредствена опасност се обади на 112. Ако е възможно без допълнителен риск, отиди на безопасно място. Не се излагай на опасност, за да вземеш вещи."
+    },
+    {
+      "title": "Подкрепа от доверен човек",
+      "body": "Доверен възрастен, близък човек, учител, училищен психолог или специалист може да помогне за намиране на подходяща подкрепа. Децата могат да се обърнат и към 116 111."
+    },
+    {
+      "title": "Медицинска помощ",
+      "body": "При нараняване потърси медицинска помощ. След душене или притискане на шията е необходима спешна медицинска оценка, дори без видими следи. При непосредствена опасност за здравето – 112. Лекарят може да документира установените увреждания."
+    },
+    {
+      "title": "Документиране на случилото се",
+      "body": "Съобщения, снимки и медицински документи могат да са полезни при търсене на защита, но само ако съхраняването им е безопасно. Не е необходимо да събираш доказателства, за да потърсиш помощ."
+    },
+    {
+      "title": "Правна закрила",
+      "body": "Полицията, социалните служби и специализираните организации могат да насочат към подходящите действия. При законовите условия районният съд може да издаде заповед за защита. Правната консултация помага да се преценят възможностите в конкретния случай."
+    },
+    {
+      "title": "Индивидуален план за безопасност",
+      "body": "Специалист може да помогне за изготвяне на план, съобразен с конкретния риск. За непълнолетни е особено важно участието на безопасен възрастен или орган за закрила. Планът не бива да увеличава опасността."
+    },
+    {
+      "title": "Професионална подкрепа",
+      "body": "Психологическа, социална и правна помощ са възможности за подкрепа според нуждите на пострадалия човек. Не е необходимо да преминаваш през всички описани действия, за да се обърнеш към специалист."
+    }
+  ]
 };
 
 'use strict';
@@ -1009,6 +1085,7 @@ ${photo('wellbeing','Психично благополучие: Подкрепа
 ${photo('friends','Приятелства: Ами ако се случва на приятелка?','#article/A19','tile-friends')}
 ${photo('warning','Тревожни знаци: Кога една връзка не е здравословна?','#article/A07','tile-warning')}
 </div><div class="magazine-bottom">${photo('sharing','Споделяне: За нещата, за които трудно се говори','#article/A23')}${photo('support','Подкрепа: Къде мога да потърся помощ','#help')}</div></section>
+<section class="local-home-link" aria-label="Местна подкрепа"><a href="#help"><span><strong>Помощ в Разград</strong><small>Местни организации, важни телефони и информация за безопасност при насилие.</small></span><span aria-hidden="true" style="font-size:28px">↗</span></a></section>
 <section class="editorial-tail"><div class="editorial-tail-inner"><p>Можеш да четеш без регистрация. Сайтът не приема лични истории или съобщения. Заглавието е символично и не обещава поверителност. При насилие, заплаха или опасност е важно да потърсиш помощ. Материалите са общообразователни, а не индивидуални съвети.</p><a class="text-link" href="#topics">Всички теми ↗</a></div></section>`;
  const sectionPills=(chosen='all')=>`<div class="section-pills" role="navigation" aria-label="Категории"><a class="pill ${chosen==='all'?'active':''}" href="#topics">Всички</a>${D.sections.map(s=>`<a class="pill ${chosen===s.id?'active':''}" href="#topics/${safe(s.id)}">${safe(s.name)}</a>`).join('')}</div>`;
  const topics=(section='all')=>{const articles=D.articles.filter(a=>section==='all'||a.section===section);return wrap('Твоето пространство','Теми','За отношенията, доверието, приятелствата и онези моменти, в които имаш нужда от повече яснота.',`${sectionPills(section)}<div class="topic-controls"><input class="text-search" id="topic-search" type="search" placeholder="Потърси тема или дума…" aria-label="Потърси в статиите"></div><p class="results-count" id="topics-count">${articles.length} статии</p><div class="article-grid" id="article-list">${articles.map(topicCard).join('')}</div>`)};
@@ -1019,7 +1096,12 @@ ${photo('warning','Тревожни знаци: Кога една връзка �
   const related=D.articles.filter(x=>x.section===a.section&&x.id!==id).slice(0,5);
   return `<section class="page-shell"><a class="back-link" href="#topics/${safe(a.section)}">← Към ${safe(sectors[a.section]?.name||'темите')}</a><div class="reading-layout"><article class="article-main"><p class="page-eyebrow">${safe(sectors[a.section]?.name||'Тема')}</p><h1 class="page-title">${safe(a.title)}</h1><p class="article-meta">Кратка статия · ${Math.max(2,Math.round(([a.lead,...(a.paragraphs||[])].join(' ').split(/\s+/).length)/180))} мин. четене</p><p class="lead">${safe(a.lead||'')}</p>${(a.paragraphs||[]).map(x=>`<p>${safe(x)}</p>`).join('')}${a.takeaway?`<div class="support-ribbon"><h2>Имай предвид</h2><p>${safe(a.takeaway)}</p></div>`:''}<details class="source-disclosure"><summary>Източници и допълнително четене</summary><ul>${cites.map(s=>`<li><a href="${safe(s.url)}" target="_blank" rel="noopener noreferrer">${safe(s.organization||'')}: ${safe(s.title||'Източник')}</a></li>`).join('')||'<li>Няма посочени източници към този текст.</li>'}</ul></details><p class="privacy-note">Този текст е обща информация, а не индивидуална консултация или оценка на конкретна ситуация. Ако си в опасност или имаш нужда от човек, с когото да поговориш, разгледай <a href="#help">възможностите за помощ</a>.</p></article><aside class="related-side" aria-label="Още по темата"><h2>Още по темата</h2>${related.map(x=>`<a href="#article/${safe(x.id)}">${safe(x.title)} ↗</a>`).join('')}<p><a href="#help">Къде можеш да потърсиш подкрепа ↗</a></p></aside></div></section>`;
  };
- const help=()=>wrap('Когато имаш нужда от подкрепа','Не е нужно да се справяш сама','Този сайт не приема лични съобщения. Но има хора и организации, към които можеш да се обърнеш.',`<div class="help-lead"><h2>Ако си в непосредствена опасност</h2><p>Позвъни на <a href="tel:112"><strong>112</strong></a>. Ако можеш безопасно, отиди при доверен възрастен или на място, където има хора.</p></div><div class="help-grid">${D.help_contacts.map(x=>`<section class="help-card"><h2>${safe(x.name)}</h2><a class="number" href="tel:${safe(x.phone.replace(/[^0-9+]/g,''))}">${safe(x.phone)}</a><p>${safe(x.purpose)}</p><p class="hours">${safe(x.availability)}</p><a class="site-link" href="${safe(x.url)}" target="_blank" rel="noopener noreferrer">Официален сайт ↗</a></section>`).join('')}</div><p class="privacy-note">Важно: поверителността на специализираните услуги има законови ограничения. Ако на човек стане известно, че дете се нуждае от закрила, чл. 7 от Закона за закрила на детето го задължава незабавно да уведоми на дирекция „Социално подпомагане“, ДАЗД или МВР. За съдействие и сигнал можеш да използваш 116 111; при непосредствена опасност — 112. Бързото напускане на страницата не изтрива историята на браузъра. Проверявай контактите и актуалното им работно време в официалните сайтове.</p><p><a class="text-link" href="https://www.google.com/" rel="noreferrer">Бързо излизане от страницата ↗</a></p>`);
+ const localCards=()=>D.local_help_contacts.map(x=>`<section class="help-card"><h3 style="font-size:21px;color:var(--ink);margin:0 0 12px;line-height:1.3">${safe(x.name)}</h3>${x.phones.map(p=>`<a class="number" href="tel:${safe(p.replace(/[^0-9+]/g,''))}">${safe(p)}</a>`).join('')}${x.address?`<p class="local-address">${safe(x.address)}</p>`:''}<p>${safe(x.purpose)}</p>${x.alternate_phone?`<p class="hours">Допълнителен номер по <a href="${safe(x.alternate_url)}" target="_blank" rel="noopener noreferrer">публичния указател NRM</a>: <a class="secondary-phone" href="tel:${safe(x.alternate_phone.replace(/[^0-9+]/g,''))}">${safe(x.alternate_phone)}</a></p>`:''}<a class="site-link" href="${safe(x.url)}" target="_blank" rel="noopener noreferrer">${safe(x.link)} ↗</a></section>`).join('');
+ const help=()=>wrap('Когато имаш нужда от подкрепа','Не е нужно да се справяш сама','Този сайт не приема лични съобщения. Но има хора и организации, към които можеш да се обърнеш.',`<div class="help-lead"><h2>Ако си в непосредствена опасност</h2><p>Позвъни на <a href="tel:112"><strong>112</strong></a>. Ако можеш безопасно, отиди при доверен възрастен или на място, където има хора.</p></div>
+ <section aria-labelledby="local-help-title"><h2 id="local-help-title" class="local-help-heading">Къде да потърсиш помощ в Разград</h2><p class="local-help-intro">Местни услуги и институции за подкрепа при насилие или риск. Телефоните са активни връзки за обаждане от мобилен телефон.</p><div class="help-grid local-help-grid">${localCards()}</div><p class="safety-reference">Контактите са сверени с публичните указатели на организациите на 25.11.2026 г. За приемно време и актуални контакти използвай посочените сайтове. При спешност не изчаквай приемно време – 112.</p></section>
+ <section aria-labelledby="national-help-title"><h2 id="national-help-title" class="local-help-heading">Национални контакти</h2><div class="help-grid">${D.help_contacts.filter(x=>x.phone!=='112').map(x=>`<section class="help-card"><h3 style="font-size:21px;color:var(--ink);margin:0 0 12px">${safe(x.name)}</h3><a class="number" href="tel:${safe(x.phone.replace(/[^0-9+]/g,''))}">${safe(x.phone)}</a><p>${safe(x.purpose)}</p><p class="hours">${safe(x.availability)}</p><a class="site-link" href="${safe(x.url)}" target="_blank" rel="noopener noreferrer">Официален сайт ↗</a></section>`).join('')}</div></section>
+ <section aria-labelledby="safety-title"><h2 id="safety-title" class="local-help-heading">Възможности за подкрепа при домашно насилие</h2><p class="local-help-intro">Адаптирано по информационния материал „Ти не си сама! Има помощ. Има изход.“, разпространен от Зонта клуб Разград. <strong>Това не е задължителна последователност от действия и не замества индивидуална оценка на риска.</strong> Безопасността и професионалната помощ са на първо място.</p><div class="safety-grid">${D.safety_guidance.map(x=>`<article class="safety-item"><h3>${safe(x.title)}</h3><p>${safe(x.body)}</p></article>`).join('')}</div><p class="safety-reference">Допълнителна информация: <a href="https://www.mvr.bg/gdnp/дейности/домашно-насилие" target="_blank" rel="noopener noreferrer">МВР – домашно насилие</a> · <a href="https://www.justice.government.bg/home/normdoc/2135501151" target="_blank" rel="noopener noreferrer">Закон за защита от домашното насилие</a> · <a href="https://www.ghc.nhs.uk/news/non-fatal-strangulation-there-is-no-safe-way-to-strangle/" target="_blank" rel="noopener noreferrer">NHS – медицински рискове при притискане на шията (на английски)</a>.</p></section>
+ <p class="privacy-note">Важно: поверителността на специализираните услуги има законови ограничения. Ако на човек стане известно, че дете се нуждае от закрила, чл. 7 от Закона за закрила на детето го задължава незабавно да уведоми дирекция „Социално подпомагане“, ДАЗД или МВР. За съдействие и сигнал можеш да използваш 116 111; при непосредствена опасност — 112. Бързото напускане на страницата не изтрива историята на браузъра. Ако се тревожиш, че някой следи устройството ти, потърси помощ по безопасен за теб начин.</p><p><a class="text-link" href="https://www.google.com/" rel="noreferrer">Бързо излизане от страницата ↗</a></p>`);
  const about=()=>wrap('Кои сме','За инициативата','За въпросите, които невинаги успяваме да зададем на глас.',`<div class="about-box"><p><strong>„Ще си остане между нас“</strong> е информационно пространство, създадено като инициатива на Зонта клуб Разград.</p><p>Тук говорим за първите връзки, доверието, личните граници, онлайн безопасността, приятелствата и моментите, когато нещо те тревожи.</p><p>Не искаме да ти казваме какво трябва да чувстваш. Искаме да имаш достъп до ясна информация, която да ти помогне да разбираш по-добре отношенията и собствените си възможности.</p><p>Можеш да четеш без регистрация. Не събираме съобщения, истории или отговори. Сайтът не предлага индивидуално консултиране и не замества психологическа, медицинска или правна помощ. Той не може да оцени конкретна връзка, да постави диагноза или да препоръча лично решение. Независимо психологическо одобрение все още не е потвърдено. Заглавието е символично: то не насърчава тайни от родители или възрастни, които могат да помогнат. При опасност за дете е необходимо съдействие за закрила.</p><p>Инициативата е насочена към момичета, в съответствие с мисията на Зонта. Уважението, ненасилието и отговорността са принципи, приложими към всички, независимо от пола. Материалите не насърчават интимни отношения, а предпазване от натиск, принуда и злоупотреби.</p><p>Сайтът няма формуляр за лични истории и не изисква регистрация. Технически данни за посещенията (например IP адрес) могат да бъдат обработвани от доставчика на хостинг; външните сайтове имат собствени правила за поверителност. Не се обещава анонимност на посещението.</p></div><div class="method-intro"><h2>Откъде е информацията?</h2><p>Материалите са написани на достъпен език за момичета в юношеска възраст. Темите са подбрани въз основа на публични ресурси за уважителни отношения, закрила и безопасност. Материалите са в редакционна версия до приключване на независимия психологически преглед. <a class="text-link" href="#sources">Виж източниците и редакционния подход ↗</a></p></div><div class="support-ribbon"><h2>Има теми, по които е важно да не оставаш сама</h2><p>Ако преживяваш натиск, заплаха или насилие, потърси човек или услуга, които могат да ти помогнат безопасно.</p><a href="#help">Виж възможностите за подкрепа ↗</a></div>`);
  const curatedSources=[
   {id:'S02',how:'Първи връзки, натиск, рискови ситуации и търсене на помощ сред юноши'},
